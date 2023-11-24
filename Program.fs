@@ -17,17 +17,17 @@ type Activity =
 | Restaurant of Cuisine
 | LongDrive of int * float
 
-//Calculate the Budget
+// Calculate the Budget
 let calculateBudget activity =
    match activity with 
-   |BoardGame | Chill -> 0.0
-   |Movie Regular -> 12.0
-   |Movie IMAX -> 17.0
-   |Movie Dbox -> 20.0
-   |Movie -> 12.0 + 5.0 // Other movie types with snacks
-   |Restaurant Korean -> 70.0
-   |Restaurant Turkish -> 65.0
-   |LongDrive(kilometres, fuelcharge)-> float kilometres * fuelcharge
+   | BoardGame | Chill -> 0.0
+   | Movie Regular -> 12.0
+   | Movie IMAX -> 17.0
+   | Movie DBOX -> 20.0
+   | Movie RegularWithSnacks | Movie IMAXWithSnacks | Movie DBOXWithSnacks -> 12.0 + 5.0 // Other movie types with snacks
+   | Restaurant Korean -> 70.0
+   | Restaurant Turkish -> 65.0
+   | LongDrive (kilometres, fuelcharge) -> float kilometres * fuelcharge
 
 let eveningActivity = Restaurant Turkish
 let budget = calculateBudget eveningActivity
