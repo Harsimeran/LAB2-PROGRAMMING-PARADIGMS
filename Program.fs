@@ -14,6 +14,7 @@ type Team = {
     Stats: Stats
 }
 
+// List of 5 teams 
 let teams : Team list = [
     { Name = "Houston Rockets"; Coach = { Name = "Ime Udoka"; FormerPlayer = true }; Stats = { Wins = 2328; Losses = 2196 } }
     { Name = "Milwaukee Bucks"; Coach = { Name = "Adrian Griffin"; FormerPlayer = false }; Stats = { Wins = 2340; Losses = 2103 } }
@@ -22,6 +23,7 @@ let teams : Team list = [
     { Name = "LA Clippers"; Coach = { Name = "Taylor Lue"; FormerPlayer = true }; Stats = { Wins = 1792; Losses = 2486 } }
 ]
 
+//Filtering the list
 let goodTeamNames =
     teams
     |> List.filter (fun team -> team.Stats.Wins > team.Stats.Losses)
@@ -29,6 +31,7 @@ let goodTeamNames =
 
 printfn "Good Teams: %A" goodTeamNames
 
+//Mapping the list
 let calculateWinningPercentage team =
     float team.Stats.Wins / float (team.Stats.Wins + team.Stats.Losses) * 100.0
 
