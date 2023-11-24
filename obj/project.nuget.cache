@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CsOAJ7bdPmuA0Nu+PT1fpf8bhYaFjWBL3RUXo7btVoxZW92OVYtDvCOBq1fCbGcHneL51esoUBYAjUYSiwZnxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simra\\OneDrive\\Desktop\\class-1\\MyFSharpApp\\MyFSharpApp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simra\\.nuget\\packages\\fsharp.core\\7.0.402\\fsharp.core.7.0.402.nupkg.sha512",
+    "C:\\Users\\simra\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\simra\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
